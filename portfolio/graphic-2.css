@@ -1,0 +1,40 @@
+.container-fluid img {
+	border-radius: 50px;
+	box-shadow: 10px 10px 10px grey;
+	transition: 0.9s ease;
+	
+}
+
+.container-fluid img:hover {
+	transform: scale(1.05);
+	
+}
+
+.heading h1 {
+/*	font-family: 'Montserrat', sans-serif; 
+	font-weight: bolder; */
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 6vh;
+	color: cadetblue; 
+	background-color: antiquewhite;
+} 
+
+.overlay {
+	width: 100%;
+	position: absolute;
+	font-size: 4.5vh;
+	bottom: 0;
+	text-align: center;
+	color: floralwhite;
+	font-weight: 600;
+    padding: 80px;
+	
+}
+
+
+
+
+
+
+
+
