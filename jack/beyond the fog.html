@@ -1,0 +1,655 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Beyond the Fog</title>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			font-family: 'Quicksand', sans-serif;
+			height: 900px;
+		}
+		
+		
+		ul {
+	    	list-style-type:none;
+			text-align: center; 	
+		}
+		
+		li {
+			float: right;
+			line-height: 3;
+			margin-left: 30px;	
+		}
+		
+		a {
+			text-decoration: none;
+			border-top-style: solid;
+			padding: 0 30px;
+			border-top-color: white;
+			color: white;
+			
+		}
+		
+		a:hover {
+			border-width: 8px;
+			border-top-color: #4AA1DC;
+			opacity: 1;
+		}
+		
+		
+		.active {
+			background-color: gray;
+			opacity: 0.5;
+		}
+		
+		
+		img {
+			margin-left: 20px;
+			height: 1000px;
+			position: fixed;
+			margin-top: -50px;
+			z-index: -1;	
+		}
+		
+		
+		.tag{
+			color: white;
+			font-size: 20PX;
+			margin-left: 40px;
+			border-left-style: solid;
+			border-left-width: 10px;		
+		}
+		
+		.tag h2 {
+			width:10px;
+			height: 110px;
+			background: #7ABBE8;
+			transition: 2s;
+			
+		}
+		
+		
+		.tag h2:hover {
+			width: 230px;
+		    opacity: 1.8;
+			cursor: pointer;
+		}
+		
+		
+		.container-1 {
+			position: absolute;
+			width: 1100px;
+			height: 2500px;
+			background-color: black;
+			margin-left:230px;
+
+			
+		}
+		
+
+		.box-1 img {
+			position: absolute;
+			z-index: 999;
+			width: 50px;
+			height: 50px;
+			margin-top: 70px;
+			margin-left: 185px
+		}
+		
+		.box-1 h4 {
+			position: absolute;
+			margin-left: 240px;
+			margin-top: 87px;	
+			cursor: pointer;
+			color: white;
+			
+		}
+		
+		.box-1 h2 {
+			position: absolute;
+			margin-left: 300px;
+			margin-top: 90px;
+			font-size: 12px;
+			font-weight: lighter;
+			cursor: pointer;
+			color: white;
+			
+		}
+		
+		.box-1 h1 {
+			z-index: 1;
+			position: absolute;
+			margin-left: 190px;
+			margin-top: 180px;
+			cursor: pointer;
+			color: white;
+			font-size: 40px;
+		
+			
+		}
+		
+		
+		.box-1 p {
+			z-index: 999;
+			position: absolute;
+			font-size: 25px;
+			margin-left: 190px;
+			margin-top: 280px;
+			cursor: pointer;
+			color: black;
+			width: 703px;
+			font-weight: bold;
+			color: white;
+			
+		}
+		
+		
+		.box-2 img {
+			position: absolute;
+			z-index: 999;
+			height: 520px;
+			width: 700px;
+			margin-left: 420px;
+			margin-top: 400px;
+		}
+		
+		
+		
+		
+		.box-2 p {
+			position: absolute;
+			font-size: 25px;
+			font-weight: 300;
+			margin-left: 420px;
+			margin-top: 950px;
+			width: 570px;
+			cursor: pointer;
+			color: black;
+			width: 710px;
+			color: white;	
+		}
+		
+		
+		.box-3 p {
+			position: absolute;
+			margin-top: 1200px;
+			font-size: 28px;
+			width:600px;
+			margin-left: 420px;
+			border-left: 3px yellow solid;
+			color: white;
+		}
+		
+		
+		
+		
+		.box-4 p {
+			position: absolute;
+			margin-top: 1400px;
+			font-size: 20px;
+			width:740px;
+			margin-left: 420px;
+			color: white;
+		}
+		
+		.box-5 h2 {
+			position: absolute;
+			color: white;
+			margin-top: 1510px;
+			margin-left: 420px;
+			font-size: 30px;
+		}
+	
+		
+		
+		
+		.box-5 p {
+			position: absolute;
+			margin-top: 1550px;
+			font-size: 20px;
+			width:740px;
+			margin-left: 420px;
+			color: white;
+			border-bottom: 3px #FFFFFF solid;
+			height: 350px;
+			
+		}
+		
+		.comments-1 p {
+			position: absolute;
+			z-index: 999;
+			color: white;
+			margin-left: 420px;
+			margin-top: 1910px;
+		}
+		 
+		.comments-1 img {
+			position: absolute;
+			z-index: 999;
+			height: 20px;
+			width: 20px;
+			margin-left: 1100px;
+			margin-top: 1910px;
+			cursor:pointer;
+		}
+		
+		.box-6 img {
+			z-index: 999;
+			height: 30px;
+			width: 30px;
+			margin-top: 400px;
+			margin-left: 250px;
+			cursor: pointer;
+		}
+		
+		.box-7 img {
+			z-index: 999;
+			height: 30px;
+			width: 30px;
+			margin-top: 440px;
+			margin-left: 250px;
+			cursor: pointer;
+		}
+
+		
+		.box-8 img {
+			z-index: 999;
+			height: 32px;
+			width: 30px;
+			margin-top: 475px;
+			margin-left: 250px;
+			
+		}
+
+		
+		
+		.box-9 img {
+			z-index: 999;
+			height: 32px;
+			width: 30px;
+			margin-top: 508px;
+			margin-left: 250px;
+			cursor: pointer;	
+		}
+		
+		.box-10 h2 {
+			color: white;
+			position: absolute;
+			margin-left: 320px;
+			z-index: 999;
+			margin-top: 2050px;
+		}
+		
+		
+		
+		.box-10 img {
+			position: absolute;
+			z-index: 999;
+			width:1000px;
+			height: 200px;
+			margin-top: 2090px;
+			margin-left: 300px;
+			
+		}
+		
+		.title-1 p{
+			position: absolute;
+			color: white;
+			font-weight: bold;
+			margin-top:2300px;
+			margin-left: 350px;
+			font-size: 20px;
+			border-bottom: 3px #FFFFFF solid;
+			height: 100px;
+			width: 250px;
+			transition: 1s;
+		}
+		
+		
+		.title-1 p:hover {
+			color: yellowgreen;
+			cursor: pointer;
+			
+		}
+		
+		
+		
+		.title-1 h4{
+			position: absolute;
+			color: white;
+			font-weight: bold;
+			margin-top:2300px;
+			margin-left: 690px;
+			font-size: 20px;
+			border-bottom: 3px #FFFFFF solid;
+			height: 100px;
+			width: 250px;
+			transition: 1s;
+		}
+		
+		
+		.title-1 h4:hover {
+			color: yellowgreen;
+			cursor: pointer;
+			
+		}
+		
+		.title-1 h5{
+			position: absolute;
+			color: white;
+			font-weight: bold;
+			margin-top:2300px;
+			margin-left: 1030px;
+			font-size: 20px;
+			border-bottom: 3px #FFFFFF solid;
+			height: 100px;
+			width: 250px;
+			transition: 1s;
+		}
+		
+		.title-1 h5:hover {
+			color: yellowgreen;
+			cursor: pointer;
+			
+		}
+		
+		
+		.eye-1 img {
+			position: absolute;
+			height: 30px;
+			width: 30px;
+			margin-left: 350px;
+			margin-top: 2420px;
+		}
+		
+		.eye-1 h2 {
+			margin-left: 385px;
+			margin-top: 2425px;
+			height: 20px;
+			width: 20px;
+			font-size: 15px;
+			color: antiquewhite;
+		} 
+		
+		.letter-1 img {
+			position: absolute;
+			height: 25px;
+			width: 22px;
+			margin-left: 430px;
+			margin-top: 2420px;
+		}
+		
+		.letter-1 h2 {
+			margin-left: 460px;
+			margin-top: 2425px;
+			height: 20px;
+			width: 20px;
+			font-size: 15px;
+			color: antiquewhite;
+		} 
+		
+		
+		.like-1 img {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			margin-left: 570px;
+			margin-top: 2420px;
+		}
+		
+		
+		
+		.eye-2 img {
+			position: absolute;
+			height: 30px;
+			width: 30px;
+			margin-left: 695px;
+			margin-top: 2420px;
+			
+		}
+		
+		.eye-2 h2 {
+			margin-left: 730px;
+			margin-top: 2425px;
+			height: 20px;
+			width: 20px;
+			font-size: 15px;
+			color: antiquewhite;
+		} 
+		
+		
+		
+		.letter-2 img {
+			position: absolute;
+			height: 25px;
+			width: 22px;
+			margin-left: 760px;
+			margin-top: 2420px;
+		}
+		
+		.letter-2 h2 {
+			margin-left: 790px;
+			margin-top: 2425px;
+			height: 20px;
+			width: 20px;
+			font-size: 15px;
+			color: antiquewhite;
+		} 
+		
+		.like-2 img {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			margin-left: 910px;
+			margin-top: 2420px;
+		}
+		
+		
+		
+		.eye-3 img {
+			position: absolute;
+			height: 30px;
+			width: 30px;
+			margin-left: 1035px;
+			margin-top: 2420px;
+			
+		}
+		
+		.eye-3 h2 {
+			margin-left: 1070px;
+			margin-top: 2425px;
+			height: 20px;
+			width: 20px;
+			font-size: 15px;
+			color: antiquewhite;
+		} 
+		
+		
+		
+		.letter-3 img {
+			position: absolute;
+			height: 25px;
+			width: 22px;
+			margin-left: 1095px;
+			margin-top: 2420px;
+		}
+		
+		.letter-3 h2 {
+			margin-left: 1125px;
+			margin-top: 2425px;
+			height: 20px;
+			width: 20px;
+			font-size: 15px;
+			color: antiquewhite;
+		} 
+		
+		.like-3 img {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			margin-left: 1250px;
+			margin-top: 2420px;
+		}
+		
+	
+		
+	</style>
+</head>
+
+<body>
+	
+	
+		
+	<div class="wrapper">
+		<div class="navbar">
+	    	<ul>
+	   			<li><a href="blog.html">BLOG</a></li>
+				<li><a href="documentary.html">DOCUMENTRY</a></li>
+				<li><a href="portraits.html">PORTRAITS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+	    		<li><a href="index.html">HOME</a></li>
+	    	</ul>
+		</div>
+		
+		<div>
+			<img src="david.jpg">
+		</div>
+
+	
+	<div class="tag">
+		<h2>JACK<br>BANKS<br>PHOTOGRAPHY</h2>
+	</div>
+		
+		
+	 <div class="container-1">
+		<div class="box-1">
+		<img src="dp-01.png">
+		<h4>Admin</h4>
+		<h2>0 days ago. &nbsp; &nbsp;2 min</h2>
+		<h1>Beyond the Fog</h1>
+		<p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...</p>
+		</div> 
+	</div>	
+		
+		
+	
+	
+		<div class="box-2">
+		<img src="3.png">
+		<p>Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.</p>
+	</div> 
+		
+		
+		<div class="box-3">
+		<p>“Do you have a design in mind for your blog? Whether you prefer a trendy postcard look or you’re going for a more editorial style blog - there’s a stunning layout for everyone.” </p>
+	</div> 
+		
+			
+		<div class="box-4">
+		<p>You’ll be posting loads of engaging content, so be sure to keep your blog organized with Categories that also allow visitors to explore more of what interests them. </p>
+	</div> 
+		
+		
+		<div class="box-5">
+		<h2>Create Relevant Content</h2>
+		<p>Writing a blog is a great way to position yourself as an authority in your field and captivate your readers’ attention. Do you want to improve your site’s SEO ranking? Consider topics that focus on relevant keywords and relate back to your website or business. You can also add hashtags (#vacation #dream #summer) throughout your posts to reach more people, and help visitors search for relevant content.
+           <br><br>
+        Blogging gives your site a voice, so let your business’ personality shine through. Choose a great image to feature in your post or add a video for extra engagement. Are you ready to get started? Simply create a new post now. </p>
+	</div> 
+		
+		
+		<div class="comments-1">
+		    <p> 128 views &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 0 comments</p>
+			<img src="like.png">
+		</div>
+		
+
+		<div class="box-6">
+		<img src="fb.png">
+		</div>
+		
+	
+		<div class="box-7">
+		<img src="twit-2.png">
+		</div>
+		
+		
+		<div class="box-8">
+		<img src="in.png">
+		</div>
+		
+		<div class="box-9">
+		<img src="pin.png">
+		</div>
+		
+		
+		<div class="box-10">
+		<h2>Recent Post</h2>
+		<img src="footer-4.png">
+			
+		<div class="title-1">
+			<p>About Last Summer</p>
+			<h4>Letter to Alice</h4>
+			<h5>The sound of suburbs</h5>
+			</div>	
+			
+		<div class="eye-1">
+			<img src="eye.png">
+			<h2>0</h2>
+			</div>	
+			
+		<div class="letter-1">
+			<img src="msg.png">
+			<h2>0</h2>
+			</div>
+	
+	  <div class="like-1">
+			<img src="like.png">
+			</div>
+		
+			
+		<div class="eye-2">
+			<img src="eye.png">
+			<h2>0</h2>
+			</div>	
+			
+		<div class="letter-2">
+			<img src="msg.png">
+			<h2>0</h2>
+			</div>
+	
+	  <div class="like-2">
+			<img src="like.png">
+			</div>	
+			
+			
+			
+				
+		<div class="eye-3">
+			<img src="eye.png">
+			<h2>0</h2>
+			</div>	
+			
+		<div class="letter-3">
+			<img src="msg.png">
+			<h2>0</h2>
+			</div>
+	
+	  <div class="like-3">
+			<img src="like.png">
+			</div>	
+			
+			
+			
+			
+	</div>
+	</div>
+</body>
+</html>

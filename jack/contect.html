@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>contact</title>
+	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	
+	
+	<style>
+	
+		
+		
+	.wrapper {
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 400;
+			background-color: black;
+			width: 1519px;
+			height: 900px;
+			margin-top: -10px;
+			position: absolute;
+			color: white;
+		}
+		
+		
+		ul {
+	    	list-style-type:none;
+			text-align: center; 	
+		}
+		
+		li {
+			float: right;
+			margin-left: 30px;
+			margin-top: 20px;
+
+			}
+		
+		.navbar a {
+			text-decoration: none;
+			border-top-style: solid;
+			padding: 0 32px;
+			border-top-color: white;
+			color: white;
+			line-height: 5px;
+		
+			
+		}
+		
+		.navbar a:hover {
+			border-width: 8px;
+			border-top-color: #4AA1DC;
+			opacity: 1;
+		}
+		
+
+		.active {
+			background-color: gray;
+			opacity: 0.5;
+		}
+		
+		
+		.tag{
+			color: white;
+			font-size: 20PX;
+			margin-left: 40px;
+			border-left-style: solid;
+			border-left-width: 10px;
+			margin-top: 60px;
+			transform: translate(-1% , -8%);
+		
+		}
+		
+		.tag h2 {
+			width:10px;
+			height: 110px;
+			background: #7ABBE8;
+			transition: 2s;
+		}
+		
+		
+		.tag h2:hover {
+			width: 230px;
+		    opacity: 1.8;
+			cursor: pointer;
+		}	
+		
+		.container h1 {
+			position: absolute;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 25px;
+			font-weight: bolder;
+			margin-left: 330px;
+			margin-top: 90px;
+		}
+		
+		.container h2 {
+			position: absolute;
+			font-size: 15px;
+			margin-top: 80px;
+			font-weight: lighter;
+			margin-left: 330px;
+			margin-top: 159px;
+		}
+		
+		.footer img {
+			 position: absolute;
+			 margin-left: 320px;
+			 margin-top:300px;
+			 width: 25px;
+			 height: 25px;
+			  
+		}	
+		
+		.footer p {
+			position: absolute;
+			margin-left: 365px;
+			margin-top: 305px;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 12px;
+			font-weight: 500;
+			transition-duration: 2s;
+		}
+		
+		.footer p:hover {
+			color: #5fa7dc;
+			cursor: pointer;
+		} 
+		
+		
+		
+		.social img {
+			height: 22px;
+			width: 22px;
+			margin-left: 320px;
+			margin-top: 340px
+		}
+		
+		.social p {
+			margin-left: 365px;
+			margin-top: -22px;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 12px;
+			font-weight: 500;	
+			transition-duration: 2s;
+			
+		}
+		
+		.social p:hover {
+	           color: #b4458a;
+			   cursor: pointer;
+   
+		}
+		
+		
+		
+		
+		
+			
+	
+html {
+  height: 100%;
+}
+	
+	body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+	
+}
+
+.contect-box {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  width: 430px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+ 
+}
+
+.contect-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.user-box {
+  position: relative;
+}
+
+.contect-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.contect-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+
+
+
+.contect-box .user-box input:focus ~ label,
+.contect-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.contect-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.contect-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.contect-box a span {
+  position: absolute;
+  display: block;
+}
+
+.contect-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.contect-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.contect-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.contect-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+	
+	
+	
+	</style>
+	
+	
+	
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<div class="navbar">
+	    	<ul>
+				<li><a class="active" href="#">CONTACT</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="documentary.html">DOCUMENTRY</a></li>
+				<li><a href="portraits.html">PORTRAITS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+	    		<li><a href="index.html">HOME</a></li>
+	    	</ul>
+		</div>
+		
+		
+			
+	<div class="tag">
+		<h2>JACK<br>BANKS<br>PHOTOGRAPHY</h2>
+	</div>
+	
+		<div class="container">
+			<h1>JACK BANKS</h1>
+		    <h2>500 Terry Francois St.<br>
+            San Francisco, CA 94158<br>
+            info@mysite.com<br>
+            Tel: 123-456-7890<br>
+            Fax: 123-456-7890 </h2>
+		</div>
+	
+	
+	
+
+	<div class="contect-box">
+  <h2>CONTECT</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label>Name</label>
+    </div>
+    <div class="user-box">
+      <input type="email" name="" required="">
+      <label>Email</label>
+    </div>
+    
+    <div class="user-box">
+      <input type="number" name="" required="">
+      <label>Phone</label>
+    </div>
+
+    
+    
+    
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+</div>
+		
+		
+		
+		 <div class="footer">
+		 <img src="twit.png">
+		 <p>FOLLOW ME ON TWITTER</p>
+	</div>
+			
+					
+	 <div class="social">
+		 <img src="instagram.png">
+		 <p>FOLLOW ME ON INSTAGRAM</p>
+	</div>
+		
+		
+		
+		
+		
+		
+		
+	</div>
+</body>
+</html>

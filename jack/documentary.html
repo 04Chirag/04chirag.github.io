@@ -1,0 +1,558 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>documentary</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">	
+	
+	<style>
+	
+	.wrapper {
+				
+			font-family: 'Quicksand', sans-serif;
+			background-color: black;
+			width: 1510px;
+			height: 2800px;
+			margin-top: -10px;
+			position: absolute;
+		}
+		
+		
+		ul {
+	    	list-style-type:none;
+			text-align: center; 	
+		}
+		
+		li {
+			float: right;
+			line-height: 3;
+			margin-left: 30px;
+		
+			
+		}
+		
+		a {
+			text-decoration: none;
+			border-top-style: solid;
+			padding: 0 32px;
+			border-top-color: white;
+			color: white;
+			
+			
+		}
+		
+		a:hover {
+			border-width: 8px;
+			border-top-color: #4AA1DC;
+			opacity: 1;
+		}
+		
+		
+		.active {
+			background-color: gray;
+			opacity: 0.5;
+		}
+		
+		
+		.tag{
+			color: white;
+			font-size: 20PX;
+			margin-left: 40px;
+			border-left-style: solid;
+			border-left-width: 10px;
+			margin-top: 60px;
+			transform: translate(-1% , -8%);
+		
+		}
+		
+		.tag h2 {
+			width:10px;
+			height: 110px;
+			background: #7ABBE8;
+			transition: 2s;
+			font-weight: 400;
+		}
+		
+		
+		.tag h2:hover {
+			width: 230px;
+		    opacity: 1.8;
+			cursor: pointer;
+		}
+		
+		.container {
+			color: white;
+			width: 750px;
+			margin-left: 350px;
+			margin-top: 90px;
+			
+		}
+		
+		.container h1 {
+			font-size: 25px;
+			font-weight:900;
+			
+		}
+		
+		.container p {
+			font-weight: 100;
+			font-size: 16px;
+		}
+		  
+		
+		.section-5 img {
+			position: absolute;;
+			width: 250px;
+		
+		}
+		 
+		.flip-box img {
+			margin-top: 20px;
+			width: 300px;
+			margin-left: -10px;
+           }
+		   
+		
+		     .flip-box {
+                     width: 250px;
+                     height: 475px;
+                     perspective:1000px;
+				     cursor: pointer;
+				     perspective: 2000px;
+				 
+                     }
+
+            .flip-box-inner {
+                      position: relative;
+                      width: 100%;
+                      height: 100%;
+                      transition: transform 0.9s;
+                      transform-style: preserve-3d;
+                      }
+
+           .flip-box:hover .flip-box-inner {
+                 transform: rotateX(180deg);
+			   
+}
+
+		   .flip-box-front, .flip-box-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                }
+
+           
+            .flip-box-back {
+                  transform: rotateX(180deg);
+                   }
+		
+		
+		
+		
+		
+		.flip-box-1 {
+            background-color: transparent;
+            width: 300px;
+            height: 620px;
+			margin-left: 300px;
+			margin-top: -480px;
+            perspective: 1000px;
+			cursor: pointer;
+}
+		
+	    .flip-box-inner-1 {
+             position: relative;
+             width: 100%;
+             height: 100%;
+             transition: transform 0.8s;
+             transform-style: preserve-3d;
+}	
+		
+		.flip-box-1:hover .flip-box-inner-1 {
+              transform: rotateY(180deg);
+                 }
+		
+		.flip-box-front-1, .flip-box-back-1 {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+}
+		
+		
+	     .flip-box-front-1 {
+              background-color: #bbb;
+              color: black;
+}
+
+         .flip-box-back-1 {
+             background-color: dodgerblue;
+             color: white;
+             transform: rotateY(180deg);
+}	
+	
+		
+		.flip-box-2 {
+            background-color: transparent;
+            width: 300px;
+            height: 620px;
+			 margin-left: -1px;
+			margin-top:20px;
+            perspective: 8000px;
+			cursor: pointer;
+}
+		
+	.flip-box-inner-2 {
+             position: relative;
+             width: 100px;
+             height: 100%;
+		     margin-left: -150px;
+             transition: transform 2.5s;
+             transform-style: preserve-3d;
+}	
+		
+		.flip-box-2:hover .flip-box-inner-2 {
+              transform: rotateY(180deg);
+                 }
+		
+		.flip-box-front-2, .flip-box-back-2 {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+			
+}
+		
+         .flip-box-back-2 {
+			 position: absolute;
+             background-color: dodgerblue;
+             transform: rotateY(180deg);			
+}	
+		
+		
+		
+		
+		
+		
+		.flip-box-3 {
+			position: absolute;
+            width: 200px;
+            height: 510px;
+			margin-left: -150px;
+			margin-top: 20px;
+            perspective: 2000px;
+			cursor: pointer;
+}
+		
+	    .flip-box-inner-3 {
+             position: relative;
+             width: 100%;
+             height: 100%;
+             transition: transform 0.8s;
+             transform-style: preserve-3d;
+}	
+		
+		.flip-box-3:hover .flip-box-inner-3 {
+              transform: rotateY(180deg);
+                 }
+		
+		.flip-box-front-3, .flip-box-back-3 {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+}
+		
+         .flip-box-back-3 {
+             background-color: dodgerblue;
+             color: white;
+             transform: rotateY(180deg);
+}	
+	
+		
+		
+		
+		.flip-box-4 {
+			position: absolute;
+            width: 200px;
+            height: 510px;
+			margin-left: 184px;
+			margin-top: 20px;
+            perspective: 2000px;
+			cursor: pointer;
+}
+		
+	    .flip-box-inner-4 {
+             position: relative;
+             width: 100%;
+             height: 100%;
+             transition: transform 0.8s;
+             transform-style: preserve-3d;
+}	
+		
+		.flip-box-4:hover .flip-box-inner-4 {
+              transform: rotateY(180deg);
+                 }
+		
+		.flip-box-front-4, .flip-box-back-4 {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+}
+		
+         .flip-box-back-4 {
+             background-color: dodgerblue;
+             color: white;
+             transform: rotateY(180deg);
+}	
+		
+		
+		
+		
+		
+		.flip-box-5 {
+			position: absolute;
+            width: 200px;
+            height: 510px;
+			margin-left: 519px;
+			margin-top: 20px;
+            perspective: 2000px;
+			cursor: pointer;
+}
+		
+	    .flip-box-inner-5 {
+             position: relative;
+             width: 100%;
+             height: 100%;
+             transition: transform 0.8s;
+             transform-style: preserve-3d;
+}	
+		
+		.flip-box-5:hover .flip-box-inner-5 {
+              transform: rotateY(180deg);
+                 }
+		
+		.flip-box-front-5, .flip-box-back-5 {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+}
+		
+         .flip-box-back-5 {
+             background-color: dodgerblue;
+             color: white;
+             transform: rotateY(180deg);
+}	
+		
+		
+		
+		.footer img {
+			  margin-top: 760px;
+			  width: 60px;
+			  height: 60px;
+			  margin-left: -30px;
+		}	
+		
+		.footer p {
+			margin-left: 30px;
+			margin-top: -40px;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 15px;
+			transition-duration: 2s;
+		}
+		
+		.footer p:hover {
+			color: #5fa7dc;
+			cursor: pointer;
+		} 
+		
+		
+		
+		.social img {
+			height: 50px;
+			width: 50px;
+			transform: translate(780%,-120%);
+		}
+		
+		.social p {
+			margin-left: 460px;
+			margin-top: -95px;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 15px;	
+			transition-duration: 2s;
+			
+		}
+		
+		.social p:hover {
+	           color: #b4458a;
+			   cursor: pointer;
+   
+		}
+		
+		
+		.footernew {
+			margin-top: 150px;
+			
+		}
+		
+		
+		
+		
+		
+		</style>
+</head>
+
+<body>
+	
+	
+	<div class="wrapper">
+		<div class="navbar">
+	    	<ul>
+				<li><a href="contect.html">CONTACT</a></li>
+	   			<li><a href="blog.html">BLOG</a></li>
+				<li><a class="active" href="#DOCUMENTRY">DOCUMENTRY</a></li>
+				<li><a href="portraits.html">PORTRAITS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+	    		<li><a href="index.html">HOME</a></li>
+	    	</ul>
+		</div>
+		
+	
+			
+	<div class="tag">
+		<h2>JACK<br>BANKS<br>PHOTOGRAPHY</h2>
+	</div>
+	
+	
+	<div class="container">
+			<h1>DOCUMENTARY</h1>
+		    
+			<p>
+            This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are. Tip: Add your own image by double clicking the image and clicking Change Image.</p>
+	
+	
+	         <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                       <img src="friday-1.png">
+                </div>
+					  
+					  
+              <div class="flip-box-back">
+                  <img src="monday.png">
+                 </div>
+                </div>
+              </div>
+				
+				
+		
+		      <div class="flip-box-1">
+                 <div class="flip-box-inner-1">
+                   <div class="flip-box-front-1">
+                         <img src="rainy.jpg">
+                 </div>
+					 
+					 
+               <div class="flip-box-back-1">
+                        <img src="wednesday.jpg">
+                     </div>
+                   </div>
+                 </div>
+				      
+				
+		 <div class="flip-box-2">
+                 <div class="flip-box-inner-2">
+                   <div class="flip-box-front-2">
+                         <img src="saturday.jpg">
+                 </div>
+					 
+					 
+               <div class="flip-box-back-2">
+                        <img src="sunday.jpg">
+                     </div>
+                   </div>
+                 </div>
+				
+				
+	
+	
+		
+		      <div class="flip-box-3">
+                 <div class="flip-box-inner-3">
+                   <div class="flip-box-front-3">
+                         <img src="1.jpg">
+                 </div>
+					 
+					 
+               <div class="flip-box-back-3">
+                        <img src="9.jpg">
+                     </div>
+                   </div>
+                 </div>
+	
+	
+	
+	
+		      <div class="flip-box-4">
+                 <div class="flip-box-inner-4">
+                   <div class="flip-box-front-4">
+                         <img src="2.jpg">
+                 </div>
+					 
+					 
+               <div class="flip-box-back-4">
+                        <img src="8.jpg">
+                     </div>
+                   </div>
+                 </div>
+	
+	
+	
+		
+		<div class="flip-box-5">
+                 <div class="flip-box-inner-5">
+                   <div class="flip-box-front-5">
+                         <img src="3.jpg">
+                 </div>
+					 
+					 
+               <div class="flip-box-back-5">
+                        <img src="10.jpg">
+                     </div>
+                   </div>
+                 </div>
+	
+	
+				
+	 <div class="footer">
+		 <img src="twit.png">
+		 <p>FOLLOW ME ON TWITTER</p>
+	</div>
+			
+					
+	 <div class="social">
+		 <img src="instagram.png">
+		 <p>FOLLOW ME ON INSTAGRAM</p>
+	</div>
+	
+	
+	<div class="footernew">
+		  <p style="font-size: 12px; font-family: 'Quicksand', sans-serif;" >© 2021 by JACK BANKS PHOTOGRAPHY.</p>
+		</div>
+		
+	
+	
+	
+	
+	
+		</div>	
+	</div>
+</body>
+</html>
