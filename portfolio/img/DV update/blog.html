@@ -1,0 +1,733 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>blog</title>
+<title>about</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	
+	
+	
+	
+	<style>
+		
+		.wrapper {
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 400;
+			background-color: black;
+			width: 1511px;
+			height: 2950px;
+			margin-top: -10px;
+			position: absolute;
+			color: white;
+		}
+		
+		
+		ul {
+	    	list-style-type:none;
+			text-align: center; 	
+		}
+		
+		li {
+			float: right;
+			line-height: 3;
+			margin-left: 30px;
+
+			}
+		
+		.navbar a {
+			text-decoration: none;
+			border-top-style: solid;
+			padding: 0 32px;
+			border-top-color: white;
+			color: white;
+			
+		}
+		
+		.navbar a:hover {
+			border-width: 8px;
+			border-top-color: #4AA1DC;
+			opacity: 1;
+		}
+		
+
+		.active {
+			background-color: gray;
+			opacity: 0.5;
+		}
+		
+		
+		.tag{
+			color: white;
+			font-size: 20PX;
+			margin-left: 40px;
+			border-left-style: solid;
+			border-left-width: 10px;
+			margin-top: 60px;
+			transform: translate(-1% , -8%);
+		
+		}
+		
+		.tag h2 {
+			width:10px;
+			height: 110px;
+			background: #7ABBE8;
+			transition: 2s;
+		}
+		
+		
+		.tag h2:hover {
+			width: 230px;
+		    opacity: 1.8;
+			cursor: pointer;
+		}
+		
+		.container {
+			color: white;
+			width: 550px;
+			margin-left: 150px;
+			margin-top: 90px;	
+		}
+		
+		
+		.container h1 {
+			font-family: 'Quicksand', sans-serif;
+			font-size: 16px;
+			font-weight: bolder;
+		}
+		
+		.container h2 {
+			font-size: 13px;
+			margin-top: 80px;
+			font-weight: lighter;
+		}
+		
+		.container-2 img {
+			margin-left: 140px;
+			cursor: pointer;
+			transition: .9s ease;
+			opacity: 1;
+		}
+    	.container-2 img:hover {
+			transform :scale(1.05); 
+			opacity: 0.8;
+		}
+		
+		.box-2 img {
+			position: absolute;
+			margin-left: 750px;
+			margin-top: -380px;	
+			cursor: pointer;
+		}
+		
+		.box-2 h4 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -370px;	
+			cursor: pointer;
+		}
+		
+		.box-2 h2 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -345px;
+			font-size: 12px;
+			font-weight: lighter;
+			cursor: pointer;
+		}
+		
+		.box-2 h1 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -320px;
+			cursor: pointer;
+			
+		}
+		
+		
+		.box-2 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -270px;
+			width: 380px;
+			cursor: pointer;
+			border-bottom: 3px #FFFFFF solid;
+			width: 359px;
+			height: 140px;
+			
+		}
+
+
+		.comments-2 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -100px;
+			cursor: pointer;
+		}
+	
+		.comments-2 img {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			margin-left:1100px;
+			margin-top: -100px;
+			cursor: pointer;
+		
+			
+		}
+		
+		
+		
+		
+		.container-3 img {
+			margin-left: 140px;
+			margin-top: 20px;
+			cursor: pointer;
+			transition: .9s ease;
+			opacity: 1;
+		}
+		
+		.container-3 img:hover {
+			transform :scale(1.05); 
+			opacity: 0.8;
+			
+		}
+	
+		.box-3 img {
+			position: absolute;
+			margin-left: 750px;
+			margin-top: -380px;	
+			cursor: pointer;
+		}
+		
+		.box-3 h4 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -370px;	
+			cursor: pointer;
+		}
+		
+		.box-3 h2 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -345px;
+			font-size: 12px;
+			font-weight: lighter;
+			cursor: pointer;
+		}
+		
+		.box-3 h1 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -320px;
+			cursor: pointer;
+			
+		}
+		
+		
+		.box-3 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -270px;
+			width: 380px;
+			cursor: pointer;
+			border-bottom: 3px #FFFFFF solid;
+			width: 359px;
+			height: 140px;
+		}
+
+		
+		.comments-3 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -100px;
+			cursor: pointer;
+		}
+	
+		.comments-3 img {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			margin-left:1100px;
+			margin-top: -100px;
+			cursor: pointer;
+		}
+		
+		
+		
+	
+		
+		.container-5 img {
+			margin-left: 140px;
+			margin-top: 20px;
+			cursor: pointer;
+			transition: .9s ease;
+			opacity: 1;
+		}
+		
+		.container-5 img:hover {
+			transform :scale(1.05); 
+			opacity: 0.8;
+			
+		}
+	
+		.box-5 img {
+			position: absolute;
+			margin-left: 750px;
+			margin-top: -380px;	
+			cursor: pointer;
+		}
+		
+		.box-5 h4 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -370px;	
+			cursor: pointer;
+		}
+		
+		.box-5 h2 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -345px;
+			font-size: 12px;
+			font-weight: lighter;
+			cursor: pointer;
+		}
+		
+		.box-5 h1 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -320px;
+			cursor: pointer;
+			
+		}
+		
+		
+		.box-5 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -270px;
+			width: 380px;
+			cursor: pointer;
+			border-bottom: 3px #FFFFFF solid;
+			width: 359px;
+			height: 140px;
+		}
+
+		
+		.comments-5 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -100px;
+			cursor: pointer;
+		}
+	
+		.comments-5 img {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			margin-left:1100px;
+			margin-top: -100px;
+			cursor: pointer;
+		}
+		
+		
+		
+		.container-6 img {
+			margin-left: 140px;
+			margin-top: 20px;
+			cursor: pointer;
+			transition: .9s ease;
+			opacity: 1;
+		}
+		
+		.container-6 img:hover {
+			transform :scale(1.05); 
+			opacity: 0.8;
+			
+		}
+	
+		.box-6 img {
+			position: absolute;
+			margin-left: 750px;
+			margin-top: -380px;	
+			cursor: pointer;
+		}
+		
+		.box-6 h4 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -370px;	
+			cursor: pointer;
+		}
+		
+		.box-6 h2 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -345px;
+			font-size: 12px;
+			font-weight: lighter;
+			cursor: pointer;
+		}
+		
+		.box-6 h1 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -320px;
+			cursor: pointer;
+			
+		}
+		
+		
+		.box-6 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -270px;
+			width: 380px;
+			cursor: pointer;
+			border-bottom: 3px #FFFFFF solid;
+			width: 359px;
+			height: 140px;
+		}
+
+		
+		.comments-6 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -100px;
+			cursor: pointer;
+		}
+	
+		.comments-6 img {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			margin-left:1100px;
+			margin-top: -100px;
+			cursor: pointer;
+		}
+		
+		
+		
+		
+		.container-7 img {
+			margin-left: 140px;
+			margin-top: 20px;
+			cursor: pointer;
+			transition: .9s ease;
+			opacity: 1;
+	
+		}
+		
+		.container-7 img:hover {
+			transform :scale(1.05); 
+			opacity: 0.8;
+			
+		}
+	
+		
+	
+		.box-7 img {
+			position: absolute;
+			margin-left: 750px;
+			margin-top: -380px;	
+			cursor: pointer;
+		}
+		
+		.box-7 h4 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -370px;	
+			cursor: pointer;
+		}
+		
+		.box-7 h2 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -345px;
+			font-size: 12px;
+			font-weight: lighter;
+			cursor: pointer;
+		}
+		
+		.box-7 h1 {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -320px;
+			cursor: pointer;
+			
+		}
+		
+		
+		.box-7 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -270px;
+			width: 380px;
+			cursor: pointer;
+			border-bottom: 3px #FFFFFF solid;
+			width: 359px;
+			height: 140px;
+		}
+
+		
+		.comments-7 p {
+			position: absolute;
+			margin-left: 820px;
+			margin-top: -100px;
+			cursor: pointer;
+		}
+	
+		.comments-7 img {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			margin-left:1100px;
+			margin-top: -100px;
+			cursor: pointer;
+		}
+		
+		
+		
+		
+		.footer img {
+			 position: absolute;
+			 margin-left: 400px;
+			 margin-top:100px;
+			 width: 60px;
+			 height: 60px;
+			  
+		}	
+		
+		.footer p {
+			position: absolute;
+			margin-left: 465px;
+			margin-top: 120px;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 15px;
+			font-weight: 500;
+			transition-duration: 2s;
+		}
+		
+		.footer p:hover {
+			color: #5fa7dc;
+			cursor: pointer;
+		} 
+		
+		
+		
+		.social img {
+			height: 50px;
+			width: 50px;
+			margin-left: 800px;
+			margin-top: 100px
+		}
+		
+		.social p {
+			margin-left: 865px;
+			margin-top: -36px;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 15px;
+			font-weight: 500;	
+			transition-duration: 2s;
+			
+		}
+		
+		.social p:hover {
+	           color: #b4458a;
+			   cursor: pointer;
+   
+		}
+		
+		
+		
+		.footernew {
+			font-size: 13px;
+			margin-left: 500px;
+			margin-top: 80px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</style>		
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<div class="navbar">
+	    	<ul>
+				<li><a href="contect.html">CONTACT</a></li>
+				<li><a class="active" href="#blog">BLOG</a></li>
+				<li><a href="documentary.html">DOCUMENTRY</a></li>
+				<li><a href="portraits.html">PORTRAITS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+	    		<li><a href="index.html">HOME</a></li>
+	    	</ul>
+		</div>
+		
+		
+			
+	<div class="tag">
+		<h2>JACK<br>BANKS<br>PHOTOGRAPHY</h2>
+	</div>
+		
+		
+		<div class="container">
+			<h1>CLIENT SHOWCASE</h1>
+		    <h2>ALL POSTS </h2>
+		</div>
+		
+		<div class="container-2">
+			<a href="the trip.html">
+		    <img src="images/1.png">
+			</a>
+		</div>
+
+		 
+		
+		<div class="box-2">
+		<img src="images/dp-1.png">
+		<h4>ADMIN</h4>
+		<h2>2 days ago. &nbsp; &nbsp;2 min</h2>
+		<h1>THE TRIP</h1>
+		<p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...</p>
+		</div> 
+			 
+			  
+		<div class="comments-2">
+		    <p> 0 views &nbsp; &nbsp; 0 comments</p>
+			<img src="images/like.png">
+		</div>
+			 
+		
+		<div class="container-3">
+		   <a href="Letter to Alice.html">
+		   <img src="images/5.png">
+			</a>
+		</div> 
+			 
+		<div class="box-3">
+		<img src="images/dp-2.png">
+		<h4>ADMIN</h4>
+		<h2>1 days ago. &nbsp; &nbsp;6 min</h2>
+		<h1>LETTER TO ALICE</h1>
+		<p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...</p>
+		</div> 
+			 
+		<div class="comments-3">
+		    <p> 20 views &nbsp; &nbsp; 8 comments</p>
+			<img src="images/like.png">
+		</div>
+			 
+			
+		
+	
+			  
+			 
+		
+		<div class="container-5">
+			<a href="The Sound of the Suburbs.html">
+		   <img src="images/6.png">
+				</a>
+		</div> 
+			 
+		<div class="box-5">
+		<img src="images/dp-5.png">
+		<h4>ADMIN</h4>
+		<h2>1 days ago. &nbsp; &nbsp;9 min</h2>
+		<h1>THE SOUND OF SUBURBS</h1>
+		<p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...</p>
+		</div> 
+			 
+			<div class="comments-5">
+		    <p> 750 views &nbsp; &nbsp; 56 comments</p>
+			<img src="images/like.png">
+		</div>
+			  
+		
+	   
+		
+		
+		<div class="container-6">
+			<a href="beyond the fog.html">
+		   <img src="images/3.png">
+				</a>
+		</div> 
+			 
+		<div class="box-6">
+		<img src="images/dp-01.png">
+		<h4>ADMIN</h4>
+		<h2>10 days ago. &nbsp; &nbsp;0 min</h2>
+		<h1>BEYOND THE FOG</h1>
+		<p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...</p>
+		</div> 
+			 
+			<div class="comments-6">
+		    <p> 580 views &nbsp; &nbsp; 29 comments</p>
+			<img src="images/like.png">
+		</div>
+		
+		
+		
+		<div class="container-7">
+			<a href="the nature of the offence.html">
+		   <img src="images/2.png">
+				</a>
+		</div> 
+			 
+		<div class="box-7">
+		<img src="images/dp-6.png">
+		<h4>ADMIN</h4>
+		<h2>8 days ago. &nbsp; &nbsp;20 min</h2>
+		<h1>THE NATURE OF THE OFFENCE</h1>
+		<p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...</p>
+		</div> 
+			 
+			<div class="comments-7">
+		    <p> 139 views &nbsp; &nbsp; 102 comments</p>
+			<img src="images/like.png">
+		</div>
+		
+		
+		
+		 <div class="footer">
+		 <img src="images/twit.png">
+		 <p>FOLLOW ME ON TWITTER</p>
+	</div>
+			
+					
+	 <div class="social">
+		 <img src="images/instagram.png">
+		 <p>FOLLOW ME ON INSTAGRAM</p>
+	</div>
+	
+		
+		<div class="footernew">
+		  <p>© 2021 by JACK BANKS PHOTOGRAPHY.</p>
+		</div>
+		
+		
+		
+</div>
+</body>
+</html>
